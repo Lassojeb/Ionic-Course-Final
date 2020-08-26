@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Table of Contents</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="https://picsum.photos/400"/>
+  <br/>
+  <h1>Map of the Journey</h1>
+
+  <ion-list *ngFor='let chapter of chapters'>
+    <ion-item>
+      <a href="{{chapter.url}}"><h2>{{chapter.title}}</h2></a>
+    </ion-item>
+  </ion-list>
+<br/>
+<ion-button href="/chapter1" color="success" expand="block" shape="round">
+  Start Reading</ion-button
+>
+<ion-button href="/" color="danger" expand="block" shape="round">
+  Close the Book</ion-button
+>
+</ion-content>
